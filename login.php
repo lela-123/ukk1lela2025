@@ -3,7 +3,7 @@ require 'koneksi.php';
 $email = $_POST["email"];
 $password = $_POST["password"];
 
-$query_sql = "SELECT * FROM tbl_users
+$query_sql = "SELECT * FROM 
             WHERE email = '$email' AND password = '$password'";
 
 $result = mysqli_query($conn, $query_sql);
